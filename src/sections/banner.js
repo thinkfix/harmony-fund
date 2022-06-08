@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui';
 import { Container, Box, Heading, Text, Image, Button } from 'theme-ui';
-import BannerImg from 'assets/banner-thumb.png';
+import BannerImg from 'assets/banner-thumb.jpeg';
 import ShapeLeft from 'assets/shape-left.png';
 import ShapeRight from 'assets/shape-right.png';
 
@@ -11,14 +11,12 @@ export default function Banner() {
       <Container sx={styles.banner.container}>
         <Box sx={styles.banner.contentBox}>
           <Heading as="h1" variant="heroPrimary">
-            Top Quality Digital Products To Explore
+            Допомагаємо ЗСУ разом з кожним
           </Heading>
           <Text as="p" variant="heroSecondary">
-            Get your blood tests delivered at let home collect sample from the
-            victory of the managements that supplies best design system
-            guidelines ever.
+            Кожного дня допомагаємо нашим бійцям. 
           </Text>
-          <Button variant="primary">Explore</Button>
+          <Button variant="primary">Допомогти</Button>
         </Box>
 
         <Box sx={styles.banner.imageBox}>
@@ -77,10 +75,11 @@ const styles = {
       justifyContent: 'center',
       textAlign: 'center',
       display: 'inline-flex',
+      borderRadius: 20,
+      overflow: 'hidden',
       mb: [0, null, -6, null, null, '-40px', null, -3],
       img: {
         position: 'relative',
-        height: [245, 'auto'],
       },
     },
   },

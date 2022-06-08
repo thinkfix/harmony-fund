@@ -34,9 +34,9 @@ export default function Header({ className }) {
           <Button
             className="donate__btn"
             variant="secondary"
-            aria-label="Get Started"
+            aria-label="Donate"
           >
-            Get Started
+            Допомогти
           </Button>
 
           <MobileDrawer />
@@ -61,14 +61,14 @@ const positionAnim = keyframes`
 
 const styles = {
   header: {
-    color: 'text',
+    color: 'heading_text',
     fontWeight: 'body',
     py: 4,
     width: '100%',
     position: 'absolute',
     top: 0,
     left: 0,
-    backgroundColor: 'transparent',
+    background: 'linear-gradient(180deg, rgba(19,61,157,1) 0%, rgba(17,81,173,1) 50%, rgba(9,152,231,1) 100%)',
     transition: 'all 0.4s ease',
     animation: `${positionAnim} 0.4s ease`,
     '.donate__btn': {
@@ -78,9 +78,9 @@ const styles = {
     },
     '&.sticky': {
       position: 'fixed',
-      backgroundColor: 'background',
-      color: '#000000',
-      boxShadow: '0 1px 2px rgba(0, 0, 0, 0.06)',
+      background: 'linear-gradient(180deg, rgba(19,61,157,1) 0%, rgba(17,81,173,1) 50%, rgba(9,152,231,1) 100%)',
+      color: 'heading_text',
+      boxShadow: '0 1px 3px rgba(0, 0, 0, 0.2)',
       py: 3,
       'nev > a': {
         color: 'text',

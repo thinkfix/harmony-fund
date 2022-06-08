@@ -1,18 +1,18 @@
 export default [
   {
     path: 'home',
-    label: 'Home',
+    label: 'Головна',
   },
   {
     path: 'feature',
-    label: 'Features',
+    label: 'Про фонд',
   },
   {
     path: 'pricing',
-    label: 'Pricing',
+    label: 'Реквізити',
   },
   {
     path: 'testimonial',
-    label: 'Testimonial',
+    label: 'Відгуки',
   },
 ];
